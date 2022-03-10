@@ -1,0 +1,37 @@
+@import '@styles';
+
+.home {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  position: relative;
+  margin: 24px;
+
+  @media screen and (min-width: $breakpoint-md) {
+    position: initial;
+    margin: initial;
+    place-items: center;
+  }
+
+  .boardSection {
+    position: initial;
+
+    @media screen and (min-width: $breakpoint-md) {
+      position: relative;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 30px;
+      width: 830px;
+      height: 398px;
+      align-items: end;
+    }
+
+    .resultContent {
+      margin-top: 80px;
+
+      @media screen and (min-width: $breakpoint-md) {
+        margin-top: initial;
+      }
+    }
+  }
+}
