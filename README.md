@@ -27,7 +27,11 @@ npm run dev
 
 ```
 
-## Pasos build de producción
+## Aplicación desplegada en servidor
+
+https://dazzling-jang-3eb014.netlify.app
+
+## Opcional: Pasos build de producción
 
 1. Instalar dependencias
 
