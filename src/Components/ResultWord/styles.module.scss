@@ -1,0 +1,43 @@
+@import '@styles';
+
+.resultWordContainer {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px 80px 5px 32px;
+  min-height: 85px;
+  height: auto;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  word-break: break-word;
+  white-space: break-spaces;
+
+  border: 2px solid #979797;
+  color: #7ed321;
+  // color: #d0021b;
+
+  &.resulInvalid {
+    color: #d0021b;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 40px;
+  }
+
+  .state {
+    position: absolute;
+    right: 16px;
+    font-size: 18px;
+    letter-spacing: initial;
+    font-weight: initial;
+    color: #d2dec2;
+
+    &.invalid {
+      color: #f4c1c7;
+    }
+  }
+}
